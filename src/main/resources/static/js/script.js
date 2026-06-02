@@ -100,7 +100,7 @@ if (contactForm) {
     responseBox.style.display = "block";
     responseBox.textContent = "Sending message...";
 
-    fetch("http://localhost:8082/contact", {
+    fetch("/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
