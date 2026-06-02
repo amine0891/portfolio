@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <main class="content">
+      <div id="navbar"></div>
+      <h1>My Projects</h1>
+
+      <div id="projects-container" class="projects-grid"></div>
+    </main>
+    <div id="footer"></div>
+    <!-- MODAL MARKDOWN VIEWER -->
+    <div id="md-modal" class="modal" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="md-viewer"></div>
+      </div>
+    </div>
+    <script src="/js/marked.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
